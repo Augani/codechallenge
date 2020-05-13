@@ -6,7 +6,7 @@
 }
 
 .sideNav{
-    width: 10vw;
+    width: 10%;
     height: 100%;
     background-color: rgb(56, 54, 54);
     display: flex;
@@ -57,7 +57,9 @@
     width: 100%;
     height: 100%;
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
     color: white;
     justify-content: center;
     text-decoration: none;
@@ -103,7 +105,18 @@
 }
 
 .card{
-    
+    height: 50%;
+    width: 60%;
+    background-color: white;
+    box-shadow: grey;
+    margin: 10px;
+}
+
+.pMain{
+height: 100%;
+width: 100%;
+overflow: hidden;
+
 }
 
 .config{
@@ -152,7 +165,7 @@
 .content{
     display: flex;
     flex-direction: column;
-    background-color: grey;
-    width: 90vw;
+    background-color: rgb(252, 245, 245);
+    width: 90%;
     height: 100%;
 }
