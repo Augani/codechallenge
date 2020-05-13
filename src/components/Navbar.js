@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBell } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar (props) {
   const Page = props.location.pathname.replace('/', '')
@@ -10,7 +12,9 @@ function Navbar (props) {
       <div className='pageName'>{Page}</div>
 
       <div className='config'>
-        <div className='icon'></div>
+        <div className='icon'>
+        <FontAwesomeIcon icon={faBell} />
+        </div>
         <div className='title'>
           <h4>Super Admin</h4>
           <p>Super Admin</p>
