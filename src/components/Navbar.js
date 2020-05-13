@@ -13,7 +13,7 @@ function Navbar (props) {
 
       <div className='config'>
         <div className='icon'>
-        <FontAwesomeIcon icon={faBell} />
+          <FontAwesomeIcon color='blue' icon={faBell} />
         </div>
         <div className='title'>
           <h4>Super Admin</h4>
