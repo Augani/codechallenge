@@ -2,42 +2,33 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 
-function Navbar(props) {
-  
-    const Page = props.location.pathname.replace('/', '');
-   
-        return (
-            <div className="topNav">
-            <div className="pageName">
-                {Page}
-            </div>
+function Navbar (props) {
+  const Page = props.location.pathname.replace('/', '')
 
-            <div className="config">
-            <div className="icon">
+  return (
+    <div className='topNav'>
+      <div className='pageName'>{Page}</div>
 
-            </div>
-            <div className="title">
-                <h4>Super Admin</h4>
-                <p>Super Admin</p>
-            </div>
-            <div className="imageH">
-        <img className="image" src="https://api.adorable.io/avatars/285/abott@adorable.pngCopy to Clipboard
-"/>
-            </div>
-
-            </div>
-
-            </div>
-        )
-   
+      <div className='config'>
+        <div className='icon'></div>
+        <div className='title'>
+          <h4>Super Admin</h4>
+          <p>Super Admin</p>
+        </div>
+        <div className='imageH'>
+          <img
+            className='image'
+            src='https://api.adorable.io/avatars/285/abott@adorable.pngCopy to Clipboard
+'
+          />
+        </div>
+      </div>
+    </div>
+  )
 }
 
-const mapStateToProps = (state) => ({
-    
-})
+const mapStateToProps = state => ({})
 
-const mapDispatchToProps = (dispatch) => ({
-    
-})
+const mapDispatchToProps = dispatch => ({})
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Navbar))
